@@ -58,6 +58,9 @@
 
     <div id="app"></div>
 
+<div class="loader" style="position: absolute; top: 0; left: 0; width: 100%!important; height: 100%!important; background: red;">
+  loading....
+</div>
 </div> <!-- main -->
 
 <div id="about">
@@ -87,7 +90,6 @@
 
     </div>
   </div>
-
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -104,44 +106,7 @@
     constructor(props) {
       super(props);
       this.state = {
-        data: [
-          {
-            name: 'Safehouse Outreach',
-            phone: '404-523-2221',
-            beds_available: 3,
-            lat: 33.757960,
-            lng: -84.383492,
-            address: '89 Ellis St NE, Atlanta, GA 30303',
-            dist: 3
-          },
-          {
-            name: 'Atlanta\'s Children Shelter',
-            phone: '404-892-3713',
-            bedsAvailable: 0,
-            lat: 33.770828,
-            lng: -84.385625,
-            address: '607 Peachtree St NE, Atlanta, GA 30308',
-            dist: 2
-          },
-          {
-            name: 'The Shepards Inn',
-            phone: '404-367-2493',
-            bedsAvailable: 1,
-            lat: 33.764855,
-            lng: -84.392205,
-            address: '156 Mills St NW, Atlanta, GA 30313',
-            dist: 1
-          },
-          {
-            name: 'The Shepards Inn',
-            phone: '404-367-2493',
-            bedsAvailable: 1,
-            lat: 33.764855,
-            lng: -84.392205,
-            address: '156 Mills St NW, Atlanta, GA 30313',
-            dist: 6
-          }
-        ],
+        data: []
       };
     }
     componentDidMount() {
@@ -160,28 +125,18 @@
             widthCredentials: true,
           },
           success: function(data) {
+            $('.loader').remove()
             this.setState({ data });
             const map = new google.maps.Map(document.getElementById('map'), {
               center: loc,
               zoom: 13,
             });
 
-            const infoWindow = new google.maps.InfoWindow({
-              content: `
-                <div>
-                  <p>there are 6 beds available.</p>
-                  <button>Reserve</button>
-                </div>
-              `,
-            });
             const marker = new google.maps.Marker({
               position: loc,
               map,
               title: 'Your Location',
               icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-            });
-            marker.addListener('click', () => {
-              infoWindow.open(map, marker);
             });
 
             this.state.data.forEach(shelter => {
