@@ -16,18 +16,21 @@ $results = pg_query($conn, "select location.id, name, lat, long, address1, addre
 
 $shelters = pg_fetch_all($results);
 
+echo '<pre>';
 function getShelters($shelters)
 {
+    $data = array();
     if (!$shelters) {
         echo "An error occurred.\n";
         exit;
     } else {
         foreach ($shelters as $shelter) {
-            $json[] = json_encode($shelter, JSON_PRETTY_PRINT);
+            $data[] = $shelter;
         }
+        $json = json_encode($data, JSON_PRETTY_PRINT);
         echo $json;
     }
 
     exit();
 }
-getShelters($shelters);
+//getShelters($shelters);
