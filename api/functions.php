@@ -35,4 +35,4 @@ $results = pg_query($conn, "select ret_locations_tbl({$shelterName},{$bedsTotal}
 
 
 
-header('Location: https://infinite-brook-58503.herokuapp.com/shelter-edit.php?id='.$id);
+header('Location: https://infinite-brook-58503.herokuapp.com/shelter-edit.php?shelterId='.$id);
