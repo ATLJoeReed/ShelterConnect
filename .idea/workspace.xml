@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3756336d-9199-4041-9b7d-1c7bf4f15e50" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/shelters.php" afterPath="$PROJECT_DIR$/api/shelters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shelter-edit.php" afterPath="$PROJECT_DIR$/shelter-edit.php" />
     </list>
     <ignored path="shelterconnect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shelters.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shelters.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/shelters.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3814433">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state vertical-scroll-proportion="-4.148148">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="18" selection-end-column="35" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
                 <marker date="1457202637000" expanded="true" signature="384:416" placeholder="select * fro..ret_locations_tbl..." />
@@ -58,19 +58,25 @@
       <file leaf-file-name="shelter-add.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shelter-add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.111111">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+            <state vertical-scroll-proportion="-8.555555">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shelter-edit.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="shelter-edit.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shelter-edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.111111">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-              <folding />
+            <state vertical-scroll-proportion="0.4329897">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding>
+                <element signature="e#6#85#0#PHP" expanded="false" />
+                <marker date="1457204025000" expanded="true" signature="355:361" placeholder="select * fro..ret_locations_tbl..." />
+                <marker date="1457204025000" expanded="true" signature="355:586" placeholder="select * fro..shelters..." />
+                <marker date="1457204025000" expanded="true" signature="678:687" placeholder="..." />
+                <marker date="1457204025000" expanded="true" signature="694:709" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +94,8 @@
       <file leaf-file-name="conn.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/conn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4444447">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="33" />
+            <state vertical-scroll-proportion="-7.0">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
               </folding>
@@ -114,8 +120,9 @@
         <option value="$PROJECT_DIR$/shelter-add.php" />
         <option value="$PROJECT_DIR$/api/create-shelter.php" />
         <option value="$PROJECT_DIR$/api/functions.php" />
-        <option value="$PROJECT_DIR$/shelter-edit.php" />
         <option value="$PROJECT_DIR$/api/shelters.php" />
+        <option value="$PROJECT_DIR$/shelters/edit.php" />
+        <option value="$PROJECT_DIR$/shelter-edit.php" />
       </list>
     </option>
   </component>
@@ -293,18 +300,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#84#0#PHP" expanded="true" />
-            <marker date="1457194039000" expanded="true" signature="329:508" placeholder="select name,..location..." />
-            <marker date="1457194039000" expanded="true" signature="329:509" placeholder="SELECT * FRO..shelter..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Google Drive/GetUWired/Agent Converter/backup-agentconverter.com-9-25-2015/public_html/wp-content/themes/acmember/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2131902">
@@ -321,13 +316,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/conn.php">
+    <entry file="file://$PROJECT_DIR$/shelter-add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4444447">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-8.555555">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -339,26 +332,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shelter-edit.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.111111">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shelter-add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.111111">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding />
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="true" />
+            <marker date="1457194039000" expanded="true" signature="329:508" placeholder="select name,..location..." />
+            <marker date="1457194039000" expanded="true" signature="329:509" placeholder="SELECT * FRO..shelter..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/shelters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3814433">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state vertical-scroll-proportion="-4.148148">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="18" selection-end-column="35" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
             <marker date="1457202637000" expanded="true" signature="384:416" placeholder="select * fro..ret_locations_tbl..." />
@@ -366,6 +355,30 @@
             <marker date="1457202637000" expanded="true" signature="384:423" placeholder="select * fro..ret_locations_tbl..." />
             <marker date="1457202637000" expanded="true" signature="384:435" placeholder="select * fro..ret_locations_tbl..." />
             <marker date="1457202637000" expanded="true" signature="572:665" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/conn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shelter-edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4329897">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="false" />
+            <marker date="1457204025000" expanded="true" signature="355:361" placeholder="select * fro..ret_locations_tbl..." />
+            <marker date="1457204025000" expanded="true" signature="355:586" placeholder="select * fro..shelters..." />
+            <marker date="1457204025000" expanded="true" signature="678:687" placeholder="..." />
+            <marker date="1457204025000" expanded="true" signature="694:709" placeholder="..." />
           </folding>
         </state>
       </provider>
