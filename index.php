@@ -20,7 +20,7 @@ if (!$result) {
     exit;
 }
 else {
-   foreach ($resuls as $result) {
+   foreach ($results as $result) {
        print_r($result);
    }
 }
