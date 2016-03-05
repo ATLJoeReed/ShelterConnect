@@ -16,7 +16,7 @@ $results = pg_query($conn, "select location.id, name, lat, long, address1, addre
 
 $shelters = pg_fetch_all($results);
 
-echo '<pre>';
+//echo '<pre>';
 function getShelters($shelters)
 {
     $data = array();
