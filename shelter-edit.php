@@ -14,8 +14,7 @@ $results = pg_query($conn, "select name, beds_total, beds_available, beds_taken,
 
 $shelters = pg_fetch_all($results);
 
-print_r($shelters);
-die();
+$shelters[0]['name']
 
 
 
@@ -29,7 +28,7 @@ die();
 
 <form action="/api/functions.php" method="POST">
     <label>Shelter Name</label>
-    <input name="client_name" type="text" value="<?php echo $_GET['shelterName'];?>">
+    <input name="client_name" type="text" value="<?php echo $shelters[0]['name'];?>">
     <input type="hidden" value="<?php echo $id;?>">
     <input name="client" type="submit" value="Add">
 
