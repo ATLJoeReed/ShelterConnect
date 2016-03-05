@@ -13,10 +13,11 @@
 </head>
 <body>
 
-<form action="#" method="POST">
+<form action="/api/functions.php" method="POST">
     <input name="client_name" type="text" value=""></input>
 <!--    <input name="client" type="text" value=""></input>-->
     <input name="client" type="submit" value="Add"></input>
+
 
 </form>
 
