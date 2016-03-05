@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3756336d-9199-4041-9b7d-1c7bf4f15e50" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/shelters.php" afterPath="$PROJECT_DIR$/api/shelters.php" />
-    </list>
+    <list default="true" id="3756336d-9199-4041-9b7d-1c7bf4f15e50" name="Default" comment="" />
     <ignored path="shelterconnect.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -41,8 +39,8 @@
       <file leaf-file-name="shelters.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/shelters.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8659794">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.7113402">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
                 <marker date="1457196279000" expanded="true" signature="332:511" placeholder="select locat..location..." />
@@ -273,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/shelters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8659794">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.7113402">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
             <marker date="1457196279000" expanded="true" signature="332:511" placeholder="select locat..location..." />
