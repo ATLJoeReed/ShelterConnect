@@ -25,4 +25,5 @@ else {
         $json = json_encode($shelter);
         print_r($json);
     }
+    exit();
 }
