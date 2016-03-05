@@ -49,6 +49,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li id="homeTab" class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="#about">About</a></li>
+          <li><a   href="https://infinite-brook-58503.herokuapp.com/shelter-edit.php?shelterId=1">Edit</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
@@ -244,11 +245,13 @@
 <script>
 
 $('.navbar-nav li, .navbar-brand ').click(function(e) {
+  console.log(e);
+  if (e.target.pathname == "/shelter-edit.php"){
+    return;
+  }
   var activeTag = e.target.hash;
   $('#home').css('display','none');
   $('#about').css('display','none');
-  $('#faq').css('display','none');
-  $('#sponsors').css('display','none');
   $(activeTag).css('display','block');
     $('.navbar li.active').removeClass('active');
     if (this.id == 'logo'){
