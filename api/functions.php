@@ -25,16 +25,17 @@ $long = $_REQUEST['long'];
 $id = $_REQUEST['id'];
 
 
-$sql = "select update_shelter_location($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)";
+$sql = "update shelter set name = $1 where location_id = $2";
 $conn_string = "host=ec2-54-227-248-123.compute-1.amazonaws.com port=5432 dbname=d7ci554olg4igm user=".getenv('DATABASE_USERNAME')." password=". getenv('DATABASE_PASSWORD') . "";
 $conn = pg_connect($conn_string);
 
 $result = pg_prepare($conn, 'update_shelter', $sql);
-$result = pg_execute($conn, 'update_shelter', array($shelterName,$bedsTotal,$bedsAvailable,$bedsTaken,$bedsInMaintenance,$phone1,$phone2,$phone3,$address1,$address2,$city,$state,$zipCode,$lat,$long,$id));
+$result = pg_execute($conn, 'update_shelter', array($shelterName,$id));
 
 //print_r($result);
 //die();
-//$results = pg_query($conn, "select update_shelter_location($shelterName,$bedsTotal,$bedsAvailable,$bedsInMaintenance,$phone1,$phone2,$phone3,$address1,$address2,$city,$state,$zipCode,$lat,$long,$id);");
+//$results = pg_query($conn, "select update_shelter_location($shelterName,$bedsTotal,$bedsAvailable,$bedsTaken,$bedsInMaintenance,$phone1,$phone2,$phone3,$address1,$address2,$city,$state,$zipCode,$lat,$long,$id);");
+
 
 
 
