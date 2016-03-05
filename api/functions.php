@@ -25,12 +25,12 @@ $long = $_REQUEST['long'];
 $id = $_REQUEST['id'];
 
 
-$sql = "update shelter set name = $1 where location_id = $2";
+$sql = "update shelter set name = $1,beds_total=$2,beds_available=$3,beds_taken=$4,beds_maintainence=$5 where location_id = $6";
 $conn_string = "host=ec2-54-227-248-123.compute-1.amazonaws.com port=5432 dbname=d7ci554olg4igm user=".getenv('DATABASE_USERNAME')." password=". getenv('DATABASE_PASSWORD') . "";
 $conn = pg_connect($conn_string);
 
 $result = pg_prepare($conn, 'update_shelter', $sql);
-$result = pg_execute($conn, 'update_shelter', array($shelterName,$id));
+$result = pg_execute($conn, 'update_shelter', array($shelterName,$bedsTotal,$bedsAvailable,$bedsTaken,$bedsInMaintenance,$id));
 
 //print_r($result);
 //die();
