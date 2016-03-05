@@ -24,6 +24,5 @@ else {
     foreach ($shelters as $shelter) {
         $json = json_encode($shelter);
         print_r($json);
-        exit();
     }
 }
