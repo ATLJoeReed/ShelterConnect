@@ -35,7 +35,7 @@ $shelters = pg_fetch_all($results);
 
         echo '<li>';
 
-        echo '<a href="/shelter-edit.php?shelterId="'. $shelter["shelterId"] .'">'. $shelter["name"] .'</a>';
+        echo '<a href="/shelter-edit.php?shelterId='. $shelter["shelterId"] .'">'. $shelter["name"] .'</a>';
 
         echo '</li>';
     }
