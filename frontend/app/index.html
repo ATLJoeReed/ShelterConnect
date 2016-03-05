@@ -87,6 +87,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM4USDQ9HqqDLkhrkBhPuvabZW-a92uiY" type="text/javascript"></script>
+<script src="./js/fetch.js"></script>
 <script type="text/babel">
   class App extends React.Component {
     constructor(props) {
@@ -122,6 +123,7 @@
     }
     componentDidMount() {
       window.navigator.geolocation.getCurrentPosition((pos) => {
+
         const loc = {
           lat: pos.coords.latitude,
           lng: pos.coords.longitude,
