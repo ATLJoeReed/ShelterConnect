@@ -14,7 +14,7 @@ $conn = pg_connect($conn_string);
 
 
 
-$result = pg_query($conn, "select  organization, lat, long, address1, address2, city, state, zip_code, beds_available from location join shelter on location.id=shelter.location_id where beds_available>0;");
+$result = pg_query($conn, "select  name, lat, long, address1, address2, city, state, zip_code, beds_available from location join shelter on location.id=shelter.location_id where beds_available>0;");
 if (!$result) {
     echo "An error occurred.\n";
     exit;
