@@ -27,12 +27,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.742268">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.77319586">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="e#6#84#0#PHP" expanded="true" />
-                <marker date="1457193738000" expanded="true" signature="328:495" placeholder="select name,..location..." />
-                <marker date="1457193738000" expanded="true" signature="328:496" placeholder="SELECT * FRO..shelter..." />
+                <marker date="1457193790000" expanded="true" signature="329:496" placeholder="select name,..location..." />
+                <marker date="1457193790000" expanded="true" signature="329:497" placeholder="SELECT * FRO..shelter..." />
               </folding>
             </state>
           </provider>
@@ -210,12 +210,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.742268">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.77319586">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="true" />
-            <marker date="1457193738000" expanded="true" signature="328:495" placeholder="select name,..location..." />
-            <marker date="1457193738000" expanded="true" signature="328:496" placeholder="SELECT * FRO..shelter..." />
+            <marker date="1457193790000" expanded="true" signature="329:496" placeholder="select name,..location..." />
+            <marker date="1457193790000" expanded="true" signature="329:497" placeholder="SELECT * FRO..shelter..." />
           </folding>
         </state>
       </provider>
