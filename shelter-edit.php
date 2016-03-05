@@ -23,9 +23,10 @@ $shelters = pg_fetch_all($results);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="container .col-md-8">
+<div class="container col-md-8" style="margin: 40px auto 0;">
 
 <form action="/api/functions.php" method="POST">
+    <h2>Shelter Edit Form</h2>
     <div class="form-group">
         <label for="exampleInputEmail1">Shelter Name</label>
         <input type="text" name="shelter_name" class="form-control" id="exampleInputEmail1" value="<?php echo $shelters[0]['name'];?>">
