@@ -70,7 +70,7 @@ h1 {
   font-size: 1.5em; }
 
 h2 {
-  font-size: 1.25em; }
+  font-size: 1em; }
 
 #greeting {
   margin-top: .5em; }
@@ -86,6 +86,8 @@ h2 {
     border-top: 1px solid #dbdbdb; }
   .shelter h2 {
     margin-top: 1em; }
+  .shelter p {
+    margin-bottom: 1em; }
 
 .bed {
   width: 50px;
@@ -116,3 +118,22 @@ h2 {
 
 #map {
   height: 200px; }
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: #00a0af; }
+  .loader h1 {
+    margin-top: 35%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-align: center; }
+  .loader .glyphicon {
+    margin-right: 6px; }
+  .loader p {
+    text-align: center;
+    color: white; }
