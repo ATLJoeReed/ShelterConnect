@@ -21,7 +21,7 @@ $shelters = pg_fetch_all($results);
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
-<div class="container">
+<div class="container .col-md-8">
 
 <form action="/api/functions.php" method="POST">
     <div class="form-group">
@@ -53,18 +53,24 @@ $shelters = pg_fetch_all($results);
         <input type="tel" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['phone_number_3'];?>">
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['name'];?>">
+        <label for="exampleInputPassword1">Address 1</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['address1'];?>">
     </div>
     <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" id="exampleInputFile">
-        <p class="help-block">Example block-level help text here.</p>
+        <label for="exampleInputPassword1">Address 2</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['address2'];?>">
     </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox"> Check me out
-        </label>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Zip Code</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['zip_code'];?>">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Latitude</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['lat'];?>">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Longitude</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['long'];?>">
     </div>
     <input type="hidden" value="<?php echo $id;?>">
     <button type="submit" class="btn btn-default">Submit</button>
