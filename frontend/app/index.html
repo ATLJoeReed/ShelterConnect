@@ -250,8 +250,7 @@
         <div className="bedInfo">
           <h2>{this.props.data.name}</h2>
           <p>{`${Number(this.props.data.dist).toFixed(2)} miles away`}</p>
-          <p>{this.props.data.phone_number_1}</p>
-          <p>{this.props.data.address1}</p>
+          <p><a href={`tel:${this.props.data.phone_number_1}`}>{this.props.data.phone_number_1}</a></p>          <p>{this.props.data.address1}</p>
           <button className="reserve">Reserve</button>
           <button>Directions</button>
         </div>
@@ -287,19 +286,6 @@ $('button, a').click(function(e){
   console.log('click reserve');
 });
 
-$('.shelter').click(function(e) {
-  var $this = $(this);
-
-  // if ($this.hasClass('shelterActive')) {
-  //   $('.shelter').removeClass('shelterActive');
-  //   return;
-  // }
-  $('.shelter').removeClass('shelterActive');
-  if (!$this.hasClass('shelterActive')) {
-      $this.addClass('shelterActive');
-  }
-  e.preventDefault();
-});
 </script>
 </body>
 </html>
