@@ -97,10 +97,11 @@
           {
             name: 'Safehouse Outreach',
             phone: '404-523-2221',
-            bedsAvailable: 3,
+            beds_available: 3,
             lat: 33.757960,
             lng: -84.383492,
-            address: '89 Ellis St NE, Atlanta, GA 30303'
+            address: '89 Ellis St NE, Atlanta, GA 30303',
+            dist: 3
           },
           {
             name: 'Atlanta\'s Children Shelter',
@@ -108,7 +109,8 @@
             bedsAvailable: 0,
             lat: 33.770828,
             lng: -84.385625,
-            address: '607 Peachtree St NE, Atlanta, GA 30308'
+            address: '607 Peachtree St NE, Atlanta, GA 30308',
+            dist: 2
           },
           {
             name: 'The Shepards Inn',
@@ -116,7 +118,8 @@
             bedsAvailable: 1,
             lat: 33.764855,
             lng: -84.392205,
-            address: '156 Mills St NW, Atlanta, GA 30313'
+            address: '156 Mills St NW, Atlanta, GA 30313',
+            dist: 1
           },
           {
             name: 'The Shepards Inn',
@@ -124,7 +127,8 @@
             bedsAvailable: 1,
             lat: 33.764855,
             lng: -84.392205,
-            address: '156 Mills St NW, Atlanta, GA 30313'
+            address: '156 Mills St NW, Atlanta, GA 30313',
+            dist: 6
           }
         ],
       };
@@ -136,46 +140,46 @@
           lng: pos.coords.longitude,
         };
 
+        let data;
         $.ajax({
-          url: 'https://infinite-brook-58503.herokuapp.com/api/shelters.php',
+          url: `https://infinite-brook-58503.herokuapp.com/api/shelters.php?lat=${loc.lat}&long=${loc.lng}`,
           crossDomain: true,
           dataType: 'json',
           xhrFields: {
             widthCredentials: true,
           },
-        })
-        .done(function(data) {
-          console.log(data);
-        });
+          success: function(data) {
+            this.setState({ data });
+            const map = new google.maps.Map(document.getElementById('map'), {
+              center: loc,
+              zoom: 13,
+            });
 
-        const map = new google.maps.Map(document.getElementById('map'), {
-          center: loc,
-          zoom: 13,
-        });
+            const infoWindow = new google.maps.InfoWindow({
+              content: `
+                <div>
+                  <p>there are 6 beds available.</p>
+                  <button>Reserve</button>
+                </div>
+              `,
+            });
+            const marker = new google.maps.Marker({
+              position: loc,
+              map,
+              title: 'Your Location',
+            });
+            marker.addListener('click', () => {
+              infoWindow.open(map, marker);
+            });
 
-        const infoWindow = new google.maps.InfoWindow({
-          content: `
-            <div>
-              <p>there are 6 beds available.</p>
-              <button>Reserve</button>
-            </div>
-          `,
-        });
-        const marker = new google.maps.Marker({
-          position: loc,
-          map,
-          title: 'Your Location',
-        });
-        marker.addListener('click', () => {
-          infoWindow.open(map, marker);
-        });
-
-        this.state.data.forEach(shelter => {
-          const mark = new google.maps.Marker({
-            position: { lat: shelter.lat, lng: shelter.lng },
-            map,
-            title: shelter.name,
-          });
+            this.state.data.forEach(shelter => {
+              const mark = new google.maps.Marker({
+                position: { lat: Number(shelter.lat), lng: Number(shelter.long) },
+                map,
+                title: shelter.name,
+              });
+            });
+          }.bind(this)
         });
       });
     }
@@ -240,13 +244,12 @@
             <path d="M85.2,11.7c-2.6,0-4.7,2.1-4.7,4.7v17.9H9.4V4.7C9.4,2.1,7.3,0,4.7,0C2.1,0,0,2.1,0,4.7v53.1h9.4v-13h71.1v13h9.4V16.5C89.9,13.9,87.8,11.7,85.2,11.7z"/>
           </g>
           </svg>
-          <p className="text-center">{this.props.data.bedsAvailable}</p>
+          <p className="text-center">{this.props.data.beds_available}</p>
         </div>
         <div className="bedInfo">
           <h2>{this.props.data.name}</h2>
-          <p>1.5 miles away</p>
-          <p><a href={`tel:${this.props.data.phone}`}>{this.props.data.phone}</a></p>
-          <p>{this.props.data.address}</p>
+          <p>{`${Number(this.props.data.dist).toFixed(2)} miles away`}</p>
+          <p><a href={`tel:${this.props.data.phone_number_1}`}>{this.props.data.phone_number_1}</a></p>          <p>{this.props.data.address1}</p>
           <button className="reserve">Reserve</button>
           <button>Directions</button>
         </div>
