@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3756336d-9199-4041-9b7d-1c7bf4f15e50" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shelter-edit.php" afterPath="$PROJECT_DIR$/shelter-edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shelterconnect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,13 +69,12 @@
         <entry file="file://$PROJECT_DIR$/shelter-edit.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.30927834">
-              <caret line="12" column="264" selection-start-line="12" selection-start-column="264" selection-end-line="12" selection-end-column="264" />
+              <caret line="12" column="240" selection-start-line="12" selection-start-column="240" selection-end-line="12" selection-end-column="240" />
               <folding>
-                <element signature="e#6#85#0#PHP" expanded="false" />
-                <marker date="1457204136000" expanded="true" signature="355:361" placeholder="select * fro..ret_locations_tbl..." />
-                <marker date="1457204136000" expanded="true" signature="355:586" placeholder="select * fro..shelters..." />
-                <marker date="1457204136000" expanded="true" signature="685:694" placeholder="..." />
-                <marker date="1457204136000" expanded="true" signature="701:716" placeholder="..." />
+                <marker date="1457204228000" expanded="true" signature="359:365" placeholder="select * fro..ret_locations_tbl..." />
+                <marker date="1457204228000" expanded="true" signature="359:571" placeholder="select * fro..shelters..." />
+                <marker date="1457204228000" expanded="true" signature="670:679" placeholder="..." />
+                <marker date="1457204228000" expanded="true" signature="686:701" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -373,13 +371,12 @@
     <entry file="file://$PROJECT_DIR$/shelter-edit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30927834">
-          <caret line="12" column="264" selection-start-line="12" selection-start-column="264" selection-end-line="12" selection-end-column="264" />
+          <caret line="12" column="240" selection-start-line="12" selection-start-column="240" selection-end-line="12" selection-end-column="240" />
           <folding>
-            <element signature="e#6#85#0#PHP" expanded="false" />
-            <marker date="1457204136000" expanded="true" signature="355:361" placeholder="select * fro..ret_locations_tbl..." />
-            <marker date="1457204136000" expanded="true" signature="355:586" placeholder="select * fro..shelters..." />
-            <marker date="1457204136000" expanded="true" signature="685:694" placeholder="..." />
-            <marker date="1457204136000" expanded="true" signature="701:716" placeholder="..." />
+            <marker date="1457204228000" expanded="true" signature="359:365" placeholder="select * fro..ret_locations_tbl..." />
+            <marker date="1457204228000" expanded="true" signature="359:571" placeholder="select * fro..shelters..." />
+            <marker date="1457204228000" expanded="true" signature="670:679" placeholder="..." />
+            <marker date="1457204228000" expanded="true" signature="686:701" placeholder="..." />
           </folding>
         </state>
       </provider>
