@@ -45,15 +45,7 @@
 
 <div id="home">
 
-  <div class="container">
-    <div class="row">
-      <div class="marginBottom col-sm-12">
-        <h1 id="greeting" class="text-center">Find the closest open beds</h1>
-      </div>
-    </div>
-
     <div id="app"></div>
-  </div> <!-- container -->
 
 </div> <!-- main -->
 
@@ -171,7 +163,14 @@
       return (
         <div>
           <div id="map"></div>
+          <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <h1 id="greeting" className="text-center">Find the closest open beds</h1>
+            </div>
+          </div>
           <List data={this.state.data} />
+        </div>
         </div>
       );
     }
