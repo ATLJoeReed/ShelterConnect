@@ -33,4 +33,4 @@ function getShelters($shelters)
 
     exit();
 }
-//getShelters($shelters);
+getShelters($shelters);
