@@ -12,32 +12,25 @@ $conn_string = "host=ec2-54-227-248-123.compute-1.amazonaws.com port=5432 dbname
 $conn = pg_connect($conn_string);
 
 
-if($conn) {
-    echo 'yah connection';
-}
-else {
-    echo 'it didn\'t work';
-}
+$results = pg_query($conn, "select location.id, name, lat, long, address1, address2, city, state, zip_code, beds_available from location join shelter on location.id=shelter.location_id where beds_available>0;");
 
-//$results = pg_query($conn, "select location.id, name, lat, long, address1, address2, city, state, zip_code, beds_available from location join shelter on location.id=shelter.location_id where beds_available>0;");
-//
-//$shelters = pg_fetch_all($results);
-//
-//echo '<pre>';
-//function getShelters($shelters)
-//{
-//    $data = array();
-//    if (!$shelters) {
-//        echo "An error occurred.\n";
-//        exit;
-//    } else {
-//        foreach ($shelters as $shelter) {
-//            $data[] = $shelter;
-//        }
-//        $json = json_encode($data, JSON_PRETTY_PRINT);
-//        echo $json;
-//    }
-//
-//    exit();
-//}
+$shelters = pg_fetch_all($results);
+
+echo '<pre>';
+function getShelters($shelters)
+{
+    $data = array();
+    if (!$shelters) {
+        echo "An error occurred.\n";
+        exit;
+    } else {
+        foreach ($shelters as $shelter) {
+            $data[] = $shelter;
+        }
+        $json = json_encode($data, JSON_PRETTY_PRINT);
+        echo $json;
+    }
+
+    exit();
+}
 //getShelters($shelters);

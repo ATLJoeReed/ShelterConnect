@@ -41,12 +41,11 @@
       <file leaf-file-name="shelters.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/shelters.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4742268">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.814433">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="25" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
-                <marker date="1457198280000" expanded="true" signature="315:343" placeholder="..." />
-                <marker date="1457198280000" expanded="true" signature="413:592" placeholder="select locat..location..." />
+                <marker date="1457198373000" expanded="true" signature="332:511" placeholder="select locat..location..." />
               </folding>
             </state>
           </provider>
@@ -282,12 +281,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/shelters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4742268">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.814433">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="25" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1457198280000" expanded="true" signature="315:343" placeholder="..." />
-            <marker date="1457198280000" expanded="true" signature="413:592" placeholder="select locat..location..." />
+            <marker date="1457198373000" expanded="true" signature="332:511" placeholder="select locat..location..." />
           </folding>
         </state>
       </provider>
