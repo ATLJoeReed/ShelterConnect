@@ -10,9 +10,10 @@ $id = $_GET['shelterId'];
 $conn_string = "host=ec2-54-227-248-123.compute-1.amazonaws.com port=5432 dbname=d7ci554olg4igm user=".getenv('DATABASE_USERNAME')." password=". getenv('DATABASE_PASSWORD') . "";
 $conn = pg_connect($conn_string);
 
-$results = pg_query($conn, "select name, beds_total, beds_available, beds_taken, beds_maintainence, phone_number_1, phone_number_2, phone_number_3, address1, address2, zip_code, lat, long from shelter join location on location.id=location_id where shelter.id={id};" );
+$results = pg_query($conn, "select name, beds_total, beds_available, beds_taken, beds_maintainence, phone_number_1, phone_number_2, phone_number_3, address1, address2, city, state, zip_code, lat, long from shelter join location on location.id=location_id where shelter.id=".$id );
 
 $shelters = pg_fetch_all($results);
+
 
 ?>
 <!DOCTYPE html>
@@ -37,6 +38,10 @@ $shelters = pg_fetch_all($results);
         <input type="number" name="beds_available" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['beds_available'];?>">
     </div>
     <div class="form-group">
+        <label for="exampleInputPassword1">Beds Taken</label>
+        <input type="number" name="beds_taken" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['beds_available'];?>">
+    </div>
+    <div class="form-group">
         <label for="exampleInputPassword1">Beds in Maintenance</label>
         <input type="number" name="beds_in_maintainence" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['beds_maintainence'];?>">
     </div>
@@ -59,6 +64,14 @@ $shelters = pg_fetch_all($results);
     <div class="form-group">
         <label for="exampleInputPassword1">Address 2</label>
         <input type="text" name="address2" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['address2'];?>">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">City</label>
+        <input type="text" name="city" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['city'];?>">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">State</label>
+        <input type="text" name="state" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['state'];?>">
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Zip Code</label>
