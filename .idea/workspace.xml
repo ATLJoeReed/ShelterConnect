@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3756336d-9199-4041-9b7d-1c7bf4f15e50" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/conn.php" afterPath="$PROJECT_DIR$/api/conn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/shelters.php" afterPath="$PROJECT_DIR$/api/shelters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shelterconnect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,15 +26,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52577317">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state vertical-scroll-proportion="-7.0">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
               <folding>
                 <element signature="e#6#84#0#PHP" expanded="true" />
                 <marker date="1457194039000" expanded="true" signature="329:508" placeholder="select name,..location..." />
                 <marker date="1457194039000" expanded="true" signature="329:509" placeholder="SELECT * FRO..shelter..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shelters.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/shelters.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.888889">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding>
+                <element signature="e#6#85#0#PHP" expanded="true" />
+                <marker date="1457195698000" expanded="true" signature="149:328" placeholder="select locat..location..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conn.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/conn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2783505">
+              <caret line="8" column="178" selection-start-line="8" selection-start-column="178" selection-end-line="8" selection-end-column="178" />
+              <folding>
+                <element signature="e#6#85#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,6 +77,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_03_05_041628_create_Shelters_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ShelterController.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/api/shelters.php" />
+        <option value="$PROJECT_DIR$/api/conn.php" />
       </list>
     </option>
   </component>
@@ -108,6 +137,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shelterconnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shelterconnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shelterconnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -210,12 +253,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52577317">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="true" />
             <marker date="1457194039000" expanded="true" signature="329:508" placeholder="select name,..location..." />
             <marker date="1457194039000" expanded="true" signature="329:509" placeholder="SELECT * FRO..shelter..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/shelters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.888889">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+            <marker date="1457195698000" expanded="true" signature="149:328" placeholder="select locat..location..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/conn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2783505">
+          <caret line="8" column="178" selection-start-line="8" selection-start-column="178" selection-end-line="8" selection-end-column="178" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

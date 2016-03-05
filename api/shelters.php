@@ -6,7 +6,7 @@
  * Time: 11:16 AM
  */
 
-require(__DIR__ . '.conn.php');
+require(__DIR__ . 'conn.php');
 
 
 
