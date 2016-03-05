@@ -20,5 +20,6 @@ if (!$result) {
     exit;
 }
 else {
+    echo 'yayayayaya';
     print_r($result);
 }
