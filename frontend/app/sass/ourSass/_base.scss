@@ -1,3 +1,23 @@
+//reset -------
+button{
+  background-color: $mainColor;
+  border: none;
+  padding: 12px 12px;
+  border-radius: 4px;
+  color: white;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.3s;
+  &:hover{
+    background-color: darken($mainColor, 10);
+  }
+}
+
+.bedInfo button{
+  margin-right: 5px;
+}
+
+//
 html,body{
   font-family: 'Open Sans', sans-serif;
 }
