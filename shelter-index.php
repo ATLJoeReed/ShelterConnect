@@ -29,17 +29,18 @@ $shelters = pg_fetch_all($results);
 
     <h1>Shelters</h1>
 
-<?php
-foreach( $shelters as $shelter){
+    <ul>
+    <?php
+    foreach( $shelters as $shelter){
 
-    echo '<li>';
+        echo '<li>';
 
-    echo '<a href="/shelter-edit.php?shelterId="'. $shelter["shelterId"] .'>'. $shelter["name"] .'</a>';
+        echo '<a href="/shelter-edit.php?shelterId="'. $shelter["shelterId"] .'>'. $shelter["name"] .'</a>';
 
-    echo '</li>';
-}
-?>
-</ul>
+        echo '</li>';
+    }
+    ?>
+    </ul>
 
 </div>
 
