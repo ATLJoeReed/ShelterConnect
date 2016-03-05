@@ -68,14 +68,14 @@
       <file leaf-file-name="shelter-edit.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shelter-edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.556701">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.10309278">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding>
-                <marker date="1457204633000" expanded="true" signature="359:365" placeholder="select * fro..ret_locations_tbl..." />
-                <marker date="1457204633000" expanded="true" signature="359:572" placeholder="select * fro..shelters..." />
-                <marker date="1457204633000" expanded="true" signature="359:591" placeholder="select name,..shelter..." />
-                <marker date="1457204633000" expanded="true" signature="684:693" placeholder="..." />
-                <marker date="1457204633000" expanded="true" signature="700:715" placeholder="..." />
+                <marker date="1457204677000" expanded="true" signature="359:365" placeholder="select * fro..ret_locations_tbl..." />
+                <marker date="1457204677000" expanded="true" signature="359:572" placeholder="select * fro..shelters..." />
+                <marker date="1457204677000" expanded="true" signature="359:591" placeholder="select name,..shelter..." />
+                <marker date="1457204677000" expanded="true" signature="660:669" placeholder="..." />
+                <marker date="1457204677000" expanded="true" signature="676:691" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -371,14 +371,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shelter-edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.556701">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.10309278">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding>
-            <marker date="1457204633000" expanded="true" signature="359:365" placeholder="select * fro..ret_locations_tbl..." />
-            <marker date="1457204633000" expanded="true" signature="359:572" placeholder="select * fro..shelters..." />
-            <marker date="1457204633000" expanded="true" signature="359:591" placeholder="select name,..shelter..." />
-            <marker date="1457204633000" expanded="true" signature="684:693" placeholder="..." />
-            <marker date="1457204633000" expanded="true" signature="700:715" placeholder="..." />
+            <marker date="1457204677000" expanded="true" signature="359:365" placeholder="select * fro..ret_locations_tbl..." />
+            <marker date="1457204677000" expanded="true" signature="359:572" placeholder="select * fro..shelters..." />
+            <marker date="1457204677000" expanded="true" signature="359:591" placeholder="select name,..shelter..." />
+            <marker date="1457204677000" expanded="true" signature="660:669" placeholder="..." />
+            <marker date="1457204677000" expanded="true" signature="676:691" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -14,10 +14,6 @@ $results = pg_query($conn, "select name, beds_total, beds_available, beds_taken,
 
 $shelters = pg_fetch_all($results);
 
-$shelters[0]['name']
-
-
-
 ?>
 <!DOCTYPE html>
 
