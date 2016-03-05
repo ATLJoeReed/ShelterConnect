@@ -94,7 +94,7 @@ h1{
   font-size: 1.5em;
 }
 h2{
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 #greeting{
@@ -110,6 +110,7 @@ h2{
     margin-top: 1em;
   }
   p{
+    margin-bottom: 1em;;
   }
   height: 75px;
   overflow: hidden;
@@ -157,4 +158,27 @@ h2{
 
 #map {
   height: 200px;
+}
+
+.loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%!important;
+  height: 100%!important;
+  background: $mainColor;
+  h1{
+    margin-top: 35%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    color:white;
+    text-align: center;
+  }
+  .glyphicon{
+    margin-right: 6px;
+  }
+  p{
+    text-align: center;
+    color:white;
+  }
 }
