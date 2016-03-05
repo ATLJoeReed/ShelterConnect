@@ -12,7 +12,7 @@ $conn = pg_connect($conn_string);
 
 
 
-$results = pg_query($conn, "select s.id, name, beds_total, beds_available, beds_taken, beds_maintainence, phone_number_1, phone_number_2, phone_number_3, address1, address2, zip_code, lat, long from shelter s join location on location.id= s.location_id;");
+$results = pg_query($conn, "select s.id as shelterId, name, beds_total, beds_available, beds_taken, beds_maintainence, phone_number_1, phone_number_2, phone_number_3, address1, address2, zip_code, lat, long from shelter s join location on location.id= s.location_id order by s.name asc;");
 
 $shelters = pg_fetch_all($results);
 
@@ -34,7 +34,7 @@ foreach( $shelters as $shelter){
 
     echo '<li>';
 
-    echo '<a href="/shelter-edit.php?shelterId="'. $shelter["id"] .'>'. $shelter["name"] .'</a>';
+    echo '<a href="/shelter-edit.php?shelterId="'. $shelter["shelterId"] .'>'. $shelter["name"] .'</a>';
 
     echo '</li>';
 }
