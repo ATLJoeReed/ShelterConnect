@@ -17,8 +17,8 @@ $conn = pg_connect($conn_string);
 $results = pg_query($conn, "select * from ret_locations_tbl({$lat}, {$long}, 5)");
 
 $shelters = pg_fetch_all($results);
-header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
+header('Content-Type: application/json');
 //echo '<pre>';
 function getShelters($shelters)
 {

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3756336d-9199-4041-9b7d-1c7bf4f15e50" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/ajax-test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/create-shelter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/shelter-add.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/shelters.php" afterPath="$PROJECT_DIR$/api/shelters.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shelterconnect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,14 +42,14 @@
         <entry file="file://$PROJECT_DIR$/api/shelters.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.28865978">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
-                <marker date="1457202388000" expanded="true" signature="362:394" placeholder="select * fro..ret_locations_tbl..." />
-                <marker date="1457202388000" expanded="true" signature="362:399" placeholder="select * fro..ret_locations_tbl..." />
-                <marker date="1457202388000" expanded="true" signature="362:401" placeholder="select * fro..ret_locations_tbl..." />
-                <marker date="1457202388000" expanded="true" signature="362:413" placeholder="select * fro..ret_locations_tbl..." />
-                <marker date="1457202388000" expanded="true" signature="550:643" placeholder="..." />
+                <marker date="1457202476000" expanded="true" signature="362:394" placeholder="select * fro..ret_locations_tbl..." />
+                <marker date="1457202476000" expanded="true" signature="362:399" placeholder="select * fro..ret_locations_tbl..." />
+                <marker date="1457202476000" expanded="true" signature="362:401" placeholder="select * fro..ret_locations_tbl..." />
+                <marker date="1457202476000" expanded="true" signature="362:413" placeholder="select * fro..ret_locations_tbl..." />
+                <marker date="1457202476000" expanded="true" signature="550:643" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -362,14 +358,14 @@
     <entry file="file://$PROJECT_DIR$/api/shelters.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28865978">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1457202388000" expanded="true" signature="362:394" placeholder="select * fro..ret_locations_tbl..." />
-            <marker date="1457202388000" expanded="true" signature="362:399" placeholder="select * fro..ret_locations_tbl..." />
-            <marker date="1457202388000" expanded="true" signature="362:401" placeholder="select * fro..ret_locations_tbl..." />
-            <marker date="1457202388000" expanded="true" signature="362:413" placeholder="select * fro..ret_locations_tbl..." />
-            <marker date="1457202388000" expanded="true" signature="550:643" placeholder="..." />
+            <marker date="1457202476000" expanded="true" signature="362:394" placeholder="select * fro..ret_locations_tbl..." />
+            <marker date="1457202476000" expanded="true" signature="362:399" placeholder="select * fro..ret_locations_tbl..." />
+            <marker date="1457202476000" expanded="true" signature="362:401" placeholder="select * fro..ret_locations_tbl..." />
+            <marker date="1457202476000" expanded="true" signature="362:413" placeholder="select * fro..ret_locations_tbl..." />
+            <marker date="1457202476000" expanded="true" signature="550:643" placeholder="..." />
           </folding>
         </state>
       </provider>
