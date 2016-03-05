@@ -38,6 +38,10 @@ $shelters = pg_fetch_all($results);
         <input type="number" name="beds_available" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['beds_available'];?>">
     </div>
     <div class="form-group">
+        <label for="exampleInputPassword1">Beds Taken</label>
+        <input type="number" name="beds_taken" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['beds_available'];?>">
+    </div>
+    <div class="form-group">
         <label for="exampleInputPassword1">Beds in Maintenance</label>
         <input type="number" name="beds_in_maintainence" class="form-control" id="exampleInputPassword1" value="<?php echo $shelters[0]['beds_maintainence'];?>">
     </div>
