@@ -22,8 +22,8 @@ if (!$shelters) {
 }
 else {
     foreach ($shelters as $shelter) {
-        $json = json_encode($shelter);
-        print_r($json, JSON_PRETTY_PRINT);
+        $json = json_encode($shelter, JSON_PRETTY_PRINT);
+        print_r($json);
     }
     exit();
 }

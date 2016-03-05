@@ -41,11 +41,11 @@
       <file leaf-file-name="shelters.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/shelters.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83505154">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.8041237">
+              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
-                <marker date="1457196755000" expanded="true" signature="332:511" placeholder="select locat..location..." />
+                <marker date="1457196819000" expanded="true" signature="332:511" placeholder="select locat..location..." />
               </folding>
             </state>
           </provider>
@@ -273,11 +273,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/shelters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83505154">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.8041237">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1457196755000" expanded="true" signature="332:511" placeholder="select locat..location..." />
+            <marker date="1457196819000" expanded="true" signature="332:511" placeholder="select locat..location..." />
           </folding>
         </state>
       </provider>
