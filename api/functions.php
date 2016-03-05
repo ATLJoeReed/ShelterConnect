@@ -31,7 +31,8 @@ $conn = pg_connect($conn_string);
 $result = pg_prepare($conn, 'update_shelter', $sql);
 $result = pg_execute($conn, 'update_shelter', array($shelterName,$bedsTotal,$bedsAvailable,$bedsInMaintenance,$phone1,$phone2,$phone3,$address1,$address2,$city,$state,$zipCode,$lat,$long,$id));
 
-
+print_r($result);
+die();
 //$results = pg_query($conn, "select update_shelter_location($shelterName,$bedsTotal,$bedsAvailable,$bedsInMaintenance,$phone1,$phone2,$phone3,$address1,$address2,$city,$state,$zipCode,$lat,$long,$id);");
 
 
