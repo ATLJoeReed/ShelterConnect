@@ -11,13 +11,14 @@
 $conn_string = "host=ec2-54-227-248-123.compute-1.amazonaws.com port=5432 dbname=d7ci554olg4igm user=".getenv('DATABASE_USERNAME')." password=". getenv('DATABASE_PASSWORD') . "";
 $conn = pg_connect($conn_string);
 
-$lat=33.76;
-$long=-84.46;
 
+$lat = $_REQUEST['lat'];
+$long = $_REQUEST['long'];
 $results = pg_query($conn, "select * from ret_locations_tbl({$lat}, {$long}, 5)");
 
 $shelters = pg_fetch_all($results);
-
+header('Access-Control-Allow-Origin: *');
+header('Content-Type: application/json');
 //echo '<pre>';
 function getShelters($shelters)
 {
