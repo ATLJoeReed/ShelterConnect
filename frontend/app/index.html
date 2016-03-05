@@ -118,16 +118,35 @@
             lng: -84.392205,
             address: '156 Mills St NW, Atlanta, GA 30313'
           },
+          {
+            name: 'The Shepards Inn',
+            phone: '404-367-2493',
+            bedsAvailable: 1,
+            lat: 33.764855,
+            lng: -84.392205,
+            address: '156 Mills St NW, Atlanta, GA 30313'
+          }
         ],
       };
     }
     componentDidMount() {
       window.navigator.geolocation.getCurrentPosition((pos) => {
-
         const loc = {
           lat: pos.coords.latitude,
           lng: pos.coords.longitude,
         };
+
+        $.ajax({
+          url: 'https://infinite-brook-58503.herokuapp.com/api/shelters.php',
+          crossDomain: true,
+          dataType: 'json',
+          xhrFields: {
+            widthCredentials: true,
+          },
+        })
+        .done(function(data) {
+          console.log(data);
+        });
 
         const map = new google.maps.Map(document.getElementById('map'), {
           center: loc,
@@ -184,7 +203,7 @@
 
     render() {
       const nodes = this.props.data.map(shelter => <Shelter data={shelter} />);
-      return <div> {nodes} </div>;
+      return <div className="shelter-list"> {nodes} </div>;
     }
   }
   class Shelter extends React.Component {
@@ -193,7 +212,7 @@
   }
 
   componentDidMount() {
-    $('.shelter').click(function(e) {
+    $(this.refs.shelter).on('click', function(e) {
   var $this = $(this);
 
   if ($this.hasClass('shelterActive')) {
@@ -210,7 +229,7 @@
 
   render() {
     return (
-  <div className="shelter row">
+  <div ref="shelter" className="shelter row">
         <div className="bedDisplay">
           <svg className="bed" version="1.1" id="Layer_1"  x="0px" y="0px"
              viewBox="0 0 89.9 57.8">
