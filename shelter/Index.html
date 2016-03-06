@@ -7,38 +7,55 @@
 
     <div class="container">
 
+        <div class="pull-right muted">
+            <a href="/user">Louis B. Reeves</a>
+        </div>
+
+            <hr />
+
+
+        <div class="col-md-12">
+            <h1>Rosewell / Sandy Springs Shelter</h1>
+        </div>
+
+
         <div class="col-md-6">
             <h1>Walk-Ins</h1>
 
             <div class="row">
-                <div class="col-sm-6 col-xs-4 vert">
-                    <div class="input-group number-spinner">
-                        <span class="input-group-btn data-dwn">
-                            <button class="btn btn-default btn-info" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
-                        </span>
-                        <div class="form-control text-center" style="font-size:3em; height:3.3em;">
-
-                            <input type="text" class="text-center" style="border-right:0; border-left:0;border-top:0;" value="1" min="-10" max="40">
-                            <span class-="text-center" style="font-size:.5em; ">Available Beds</span>
+                <div class="col-xs-12 vert">
+                    <div class="number-spinner row">
+                        
+                        <div class="col-xs-6 in-out-buttons" style="font-size:4em;">
+                            <div class="data-dwn">
+                                <button class="btn btn-default btn-info btn-lg" data-dir="dwn"> In </button>
+                            </div>
+                            <div class="data-up">
+                                <button class="btn btn-default btn-warning btn-lg" data-dir="up"> Out </button>
+                            </div>
                         </div>
 
-                        <span class="input-group-btn data-up">
-                            <button class="btn btn-default btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
-                        </span>
+                        <div class="col-xs-6">
+
+                            <div class="text-center" style="font-size:3em; height:3.3em;">
+                                <input type="number" class="text-center" style="border-right:0; border-left:0;border-top:0; max-width:100%;" value="6" min="-10" max="40">
+                                <span class-="text-center" style="font-size:.5em; ">Available Beds</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xs-8">
+                <div class="col-xs-12 ">
                     <h3 style="margin-top:0;">Beds</h3>
                     <table class="table beds-table">
 
                         <tr>
                             <td>Occupied</td>
                             <td>
-                                <input type="number" class="form-control text-center" value="13" min="-10" max="40">
+                                <input type="number" class="form-control text-center" value="8" min="-10" max="40">
                             </td>
                         </tr>
                         <tr>
-                            <td>Maintainence</td>
+                            <td>Unavailable</td>
                             <td>
 
                                 <input type="number" class="form-control text-center" value="10" min="-10" max="40">
@@ -47,7 +64,11 @@
 
                         </tr>
                         <tr><td>Reserved</td><td>3</td></tr>
+
+                        <tr><td></td><td></td></tr>
                         <tr><td>Total</td><td>30</td></tr>
+                        <tr><td>Max Available</td><td>3</td></tr>
+
                     </table>
 
 
@@ -79,7 +100,7 @@
                             </div>
                         </div>
                         <div class="col-xs-6 col-xs-12-500 text-right">
-                            <button class="btn btn-sm btn-default">Check In</button>
+                            <button class="btn btn-sm btn-info">Check In</button>
                             <button class="btn btn-sm btn-warning">No Show</button>
                         </div>
                     </div>
@@ -99,7 +120,7 @@
                             </div>
                         </div> 
                         <div class="col-xs-6 col-xs-12-500 text-right">
-                            <button class="btn btn-sm btn-default">Check In</button>
+                            <button class="btn btn-sm btn-info">Check In</button>
                             <button class="btn btn-sm btn-warning">No Show</button>
                         </div>
                     </div>
@@ -119,7 +140,7 @@
                             </div>
                         </div>
                         <div class="col-xs-6 col-xs-12-500 text-right">
-                            <button class="btn btn-sm btn-default">Check In</button>
+                            <button class="btn btn-sm btn-info">Check In</button>
                             <button class="btn btn-sm btn-warning">No Show</button>
                         </div>
                     </div>
@@ -139,7 +160,7 @@
                             </div>
                         </div>
                         <div class="col-xs-6 col-xs-12-500 text-right">
-                            <button class="btn btn-sm btn-default">Check In</button>
+                            <button class="btn btn-sm btn-info">Check In</button>
                             <button class="btn btn-sm btn-warning">No Show</button>
                         </div>
                     </div>
@@ -149,63 +170,29 @@
 
     </div>
 
+
+    <hr />
+
     <style>
         /* just for preview */
         .container {
             padding-top: 40px;
         }
 
-
-        .vert .input-group span.input-group-btn, .vert .input-group input, .vert .input-group button {
-            display: block;
-            width: 100%;
-            border-radius: 0;
-            margin: 0;
-        }
-
-        .vert .input-group {
-            position: relative;
-        }
-
-            .vert .input-group span.data-up {
-                position: absolute;
-                top: 0;
-            }
-
-            .vert .input-group span.data-dwn {
-                position: absolute;
-                bottom: 0;
-            }
-
-        .vert .form-control.text-center {
-            margin: 34px 0;
-        }
-
-        .vert .input-group-btn:last-child > .btn, .vert .input-group-btn:last-child > .btn-group {
-            margin-left: 0;
-        }
-
-        .spinner-fixed-dimensions span button, .spinner-fixed-dimensions input {
-            height: 32px;
-        }
-
-
-
-            .spinner-fixed-dimensions input.form-control {
-                width: 50px;
-            }
-
-        .spinner-fixed-dimensions span:last-of-type {
-            float: left;
+        .in-out-buttons .btn{
+            width:100%;
+            float:right;
+            margin-bottom:.2em;
+            clear:both;
         }
 
         table.table.beds-table td {
             vertical-align: middle;
         }
 
-            table.table.beds-table td:last-of-type {
-                text-align: center;
-            }
+        table.table.beds-table td:last-of-type {
+            text-align: center;
+        }
 
         @media(max-width:500px){
             .col-xs-12-500{
@@ -216,11 +203,11 @@
     </style>
 
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script>
-    $(function() {
+        $.mobile.loading().hide();
+
+        $(function () {
 
             var action;
             $(".number-spinner button").bind('tap', function(){
