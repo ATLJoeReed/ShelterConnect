@@ -1,0 +1,241 @@
+﻿<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+
+        <div class="col-md-6">
+            <h1>Walk-Ins</h1>
+
+            <div class="row">
+                <div class="col-sm-6 col-xs-4 vert">
+                    <div class="input-group number-spinner">
+                        <span class="input-group-btn data-dwn">
+                            <button class="btn btn-default btn-info" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                        </span>
+                        <div class="form-control text-center" style="font-size:3em; height:3.3em;">
+
+                            <input type="text" class="text-center" style="border-right:0; border-left:0;border-top:0;" value="1" min="-10" max="40">
+                            <span class-="text-center" style="font-size:.5em; ">Available Beds</span>
+                        </div>
+
+                        <span class="input-group-btn data-up">
+                            <button class="btn btn-default btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-8">
+                    <h3 style="margin-top:0;">Beds</h3>
+                    <table class="table beds-table">
+
+                        <tr>
+                            <td>Occupied</td>
+                            <td>
+                                <input type="number" class="form-control text-center" value="13" min="-10" max="40">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Maintainence</td>
+                            <td>
+
+                                <input type="number" class="form-control text-center" value="10" min="-10" max="40">
+
+                            </td>
+
+                        </tr>
+                        <tr><td>Reserved</td><td>3</td></tr>
+                        <tr><td>Total</td><td>30</td></tr>
+                    </table>
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="col-md-6">
+            <h1>Reservations</h1>
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-xs-6 col-xs-12-500">
+                            <p class="list-group-item-text pull">
+                                <i class="fa fa-3x fa-clock-o pull-left" style="color:grey"></i>
+
+                            </p>
+
+                            <div class="text-left">
+                                <h4 class="list-group-item-heading">Emma J. Gonzales</h4>
+
+                                <p class="list-group-item-text">4:35 by <a>Audrey J. Mulkey</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-xs-12-500 text-right">
+                            <button class="btn btn-sm btn-default">Check In</button>
+                            <button class="btn btn-sm btn-warning">No Show</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-xs-6 col-xs-12-500">
+                            <p class="list-group-item-text pull">
+                                <i class="fa fa-3x fa-clock-o pull-left" style="color:grey"></i>
+                               
+                            </p>
+                           
+                            <div class="text-left">
+                                <h4 class="list-group-item-heading">James Cameron</h4>
+
+                                <p class="list-group-item-text">3:14 by <a>Michael Bay</a></p>
+                            </div>
+                        </div> 
+                        <div class="col-xs-6 col-xs-12-500 text-right">
+                            <button class="btn btn-sm btn-default">Check In</button>
+                            <button class="btn btn-sm btn-warning">No Show</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-xs-6 col-xs-12-500">
+                            <p class="list-group-item-text pull">
+                                <i class="fa fa-3x fa-clock-o pull-left" style="color:grey"></i>
+
+                            </p>
+
+                            <div class="text-left">
+                                <h4 class="list-group-item-heading">Anita W. Bergman</h4>
+
+                                <p class="list-group-item-text">3:14 by <a>Michael Bay</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-xs-12-500 text-right">
+                            <button class="btn btn-sm btn-default">Check In</button>
+                            <button class="btn btn-sm btn-warning">No Show</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-xs-6 col-xs-12-500">
+                            <p class="list-group-item-text pull">
+                                <i class="fa fa-3x fa-clock-o pull-left" style="color:grey"></i>
+
+                            </p>
+
+                            <div class="text-left">
+                                <h4 class="list-group-item-heading">Anibal C. Ganz</h4>
+
+                                <p class="list-group-item-text">3:35 by <a>Michael Bay</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-xs-12-500 text-right">
+                            <button class="btn btn-sm btn-default">Check In</button>
+                            <button class="btn btn-sm btn-warning">No Show</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <style>
+        /* just for preview */
+        .container {
+            padding-top: 40px;
+        }
+
+
+        .vert .input-group span.input-group-btn, .vert .input-group input, .vert .input-group button {
+            display: block;
+            width: 100%;
+            border-radius: 0;
+            margin: 0;
+        }
+
+        .vert .input-group {
+            position: relative;
+        }
+
+            .vert .input-group span.data-up {
+                position: absolute;
+                top: 0;
+            }
+
+            .vert .input-group span.data-dwn {
+                position: absolute;
+                bottom: 0;
+            }
+
+        .vert .form-control.text-center {
+            margin: 34px 0;
+        }
+
+        .vert .input-group-btn:last-child > .btn, .vert .input-group-btn:last-child > .btn-group {
+            margin-left: 0;
+        }
+
+        .spinner-fixed-dimensions span button, .spinner-fixed-dimensions input {
+            height: 32px;
+        }
+
+
+
+            .spinner-fixed-dimensions input.form-control {
+                width: 50px;
+            }
+
+        .spinner-fixed-dimensions span:last-of-type {
+            float: left;
+        }
+
+        table.table.beds-table td {
+            vertical-align: middle;
+        }
+
+            table.table.beds-table td:last-of-type {
+                text-align: center;
+            }
+
+        @media(max-width:500px){
+            .col-xs-12-500{
+                width:100% !important;
+                padding-top:.2em;
+            }
+        }
+    </style>
+
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <script>
+    $(function() {
+
+            var action;
+            $(".number-spinner button").bind('tap', function(){
+
+                btn = $(this);
+                input = btn.closest('.number-spinner').find('input');
+                if (btn.attr('data-dir') == 'up') {
+                  input.val(parseInt(input.val())+1);
+                }else{
+                  input.val(parseInt(input.val())-1);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
