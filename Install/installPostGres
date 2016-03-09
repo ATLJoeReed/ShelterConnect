@@ -1,0 +1,19 @@
+#Note this script only works on linux/unix based systems and it assumes gnu make and git are already installed.
+sudo apt-get install flex
+sudo apt-get install libreadline-dev
+sudo apt-get install bison
+git clone git://git.postgresql.org/git/postgresql.git
+cd postgresql
+./configure
+make
+sudo make install
+sudo adduser postgres
+sudo mkdir /usr/local/pgsql/data
+sudo chown postgres /usr/local/pgsql/data
+clear
+echo "Run the following commands:"
+echo "/usr/local/pgsql/bin/initdb -D /usr/local/pgsql/data"
+echo "/usr/local/pgsql/bin/postgres -D /usr/local/pgsql/data >logfile 2>&1 &"
+echo "/usr/local/pgsql/bin/createdb test"
+echo "/usr/local/pgsql/bin/psql test"
+su - postgres
