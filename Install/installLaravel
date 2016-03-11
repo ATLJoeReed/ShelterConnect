@@ -1,0 +1,53 @@
+sudo apt-get install virtualbox-qt
+sudo apt-get install apache2
+sudo apt-get install php5-cli
+#Get Composer Update this file through http://getcomposer.org/download
+#This should be updated regularly
+#php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
+#php -r "if (hash('SHA384', file_get_contents('composer-setup.php')) === '41e71d86b40f28e771d4bb662b997f79625196afcca95a5abf44391188c695c6c1456e16154c75a211d238cc3bc5cb47') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); }"
+#php composer-setup.php
+#php -r "unlink('composer-setup.php');"
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+#get Laravel
+composer global require "laravel/installer"
+sudo service apache2 restart
+sudo composer install
+sudo chmod -R 777 /var/www/app/storage
+sudo service apache2 restart
+#TO SETUP the localhost dir: http://stackoverflow.com/questions/5891802/how-do-i-change-the-root-directory-of-an-apache-server
+#Please note, that this only applies for Ubuntu 14.04 LTS and newer releases.
+#
+#In my Ubuntu 14.04 LTS, the document root was set to /var/www/html. It was configured in the following file:
+#
+#/etc/apache2/sites-available/000-default.conf
+#
+#So just do a
+#
+#sudo nano /etc/apache2/sites-available/000-default.conf
+#
+#and change the following line to what you want:
+#
+#DocumentRoot /var/www/html
+#
+#Also do a
+#
+#sudo nano /etc/apache2/apache2.conf
+#
+#and find this
+
+#<Directory /var/www/html/>
+#Options Indexes FollowSymLinks
+#AllowOverride None
+#Require all granted
+#</Directory>
+#
+#and change /var/www/html to your preferred directory
+#
+#and save it.
+#
+#After you saved your changes, just restart the apache2 webserver and you'll be done :)
+#
+#sudo service apache2 restart
+#
+#If you prefer a graphical text editor, you can just replace the sudo nano by a gksu gedit.
