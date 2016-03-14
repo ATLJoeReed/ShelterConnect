@@ -45,7 +45,29 @@
   </nav>
   <main id="home">
     @yield('content')
+    <div class="loader">
+      <h1><span class="glyphicon glyphicon-home" aria-hidden="true"></span>ShelterConnect</h1>
+      <p>loading...</p>
+    </div>
   </main>
+  <div id="about">
+    <div class="container">
+    <h1><strong>About</strong></h1>
+    <p><strong>ShelterConnect</strong> gives homelessness service providers – and the public – an easy way to find open shelter beds in downtown Atlanta.</p>
+  <p>This is a tool for clinical social workers in PATH outreach teams, which go into the field beneath bridges, in quiet doorways and in hidden spaces looking for homeless people to help. Surprisingly often, chronically homeless men and women will refuse help as a consequence of mental illness or substance dependency. These social workers try to overcome service resistance by building trust over time.</p>
+  <p>Trust is fragile. The lack of visibility about shelter bed availability complicates this extraordinarily difficult job. A PATH team can’t offer shelter if they don’t know there’s a bed available. Offering a bed only to discover none are available destroys trust. The moment is lost, and it may take months or years to rebuild this lost trust.</p>
+
+  <p><strong>ShelterConnect</strong> software allows homeless shelters to update the availability of beds using a simple interface, allowing shelter capacity for the area to be visible in real time by clinical social workers in the field. PATH teams will know how far away a bed may be, and will be able to request a bed directly from a mobile screen, asking a shelter to hold a bed open as a priority.</p>
+  <p>A team from Code for Atlanta built this application at Civic Hack Night, March 4-5 2016. Code for Atlanta is “a bunch of civic-minded technologists, designers, and topic experts using our skills to improve Atlanta and the world.”</p>
+  <p>George Chidi, social impact director, <a href="http://www.atlantadowntown.com/">Atlanta Downtown Improvement District.</a></p>
+  <p>Bradley Donahue, <a href="http://bradleydonahue.me/">web developer.</a></p>
+  <p>Josh Hathcock, <a href="https://www.linkedin.com/in/josh-hathcock-b2825a31">software developer</a></p>
+  <p>Edward Jezisek, <a href="https://www.linkedin.com/in/ejezisek">software developer.</a></p>
+  <p>Ilya Polyakov, <a href="http://impolyakov.com/">designer and developer.</a></p>
+  <p>Sam Prager, <a href="https://www.linkedin.com/in/sam-prager-782b43109">software developer.</a></p>
+  <p>Joseph Reed, <a href="https://www.linkedin.com/in/joseph-reed-373a603">independent software developer.</a></p>
+  </div>
+  </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
