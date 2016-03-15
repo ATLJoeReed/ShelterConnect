@@ -43,4 +43,4 @@ $BODY$
 
  -- NOTE: You need to change the owner to your database login... 
 ALTER FUNCTION sc_update_shelter(character varying, character varying, character varying, character varying, character, character varying, numeric, numeric, character varying, character varying, integer, integer, integer, integer, integer)
-  OWNER TO pwxgdqvdgnruli;
+  OWNER TO shelterconnect;

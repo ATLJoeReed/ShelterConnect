@@ -55,4 +55,4 @@ $BODY$
 
  -- NOTE: You need to change the owner to your database login...   
 ALTER FUNCTION sc_return_closest_shelters(numeric, numeric, integer)
-  OWNER TO pwxgdqvdgnruli;
+  OWNER TO shelterconnect;
