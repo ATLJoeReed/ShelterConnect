@@ -1,0 +1,137 @@
+button {
+  background-color: #00a0af;
+  border: none;
+  padding: 12px 12px;
+  border-radius: 4px;
+  color: white;
+  transition: background-color 0.3s; }
+  button:hover {
+    background-color: #00717c; }
+
+.bedInfo button {
+  margin-right: 5px; }
+
+html, body {
+  font-family: 'Open Sans', sans-serif; }
+
+.navbar {
+  border-radius: 0;
+  border: none;
+  background-color: #00a0af; }
+
+.navbar-default .navbar-brand {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  color: white; }
+  .navbar-default .navbar-brand .glyphicon {
+    display: inline;
+    margin-right: 6px; }
+  .navbar-default .navbar-brand:hover {
+    color: white; }
+  .navbar-default .navbar-brand:visited {
+    color: white; }
+  .navbar-default .navbar-brand:active {
+    color: white; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: #00717c;
+  color: white; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  border-color: white;
+  background-color: white; }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #00717c; }
+
+@media (min-width: 511px) {
+  .navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 160px;
+    text-align: center; }
+  .navbar > .container .navbar-brand-centered,
+  .navbar > .container-fluid .navbar-brand-centered {
+    margin-left: -80px; } }
+
+.navbar {
+  margin-bottom: 0; }
+
+.marginBottom {
+  margin-bottom: 1.25em; }
+
+h1 {
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 1em; }
+
+#greeting {
+  margin-top: .5em; }
+
+.shelter {
+  border-bottom: 1px solid #dbdbdb;
+  height: 75px;
+  overflow: hidden;
+  transition: height 0.3s; }
+  .shelter:first-of-type {
+    border-top: 1px solid #dbdbdb; }
+  .shelter h2 {
+    margin-top: 1em; }
+  .shelter p {
+    margin-bottom: 1em; }
+
+.bed {
+  width: 50px;
+  margin-top: 12.5px;
+  margin-left: 12.5px; }
+
+.bedDisplay {
+  display: block;
+  background-color: #00a0af;
+  height: 75px;
+  width: 75px;
+  float: left;
+  margin-right: 8px; }
+  .bedDisplay p {
+    color: white; }
+  .bedDisplay svg {
+    fill: white; }
+
+.shelterActive {
+  overflow: auto;
+  height: 195px; }
+
+.bedInfo {
+  overflow: hidden; }
+
+#about {
+  display: none; }
+
+#map {
+  height: 200px; }
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: #00a0af; }
+  .loader h1 {
+    margin-top: 5em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-align: center; }
+  .loader .glyphicon {
+    margin-right: 6px; }
+  .loader p {
+    text-align: center;
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */
