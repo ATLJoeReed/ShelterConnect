@@ -11,9 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('hello');
+Route::get('/', 'MainController@main');
+
+Route::get('/shelter', 'ShelterController@index');
+
+
+Route::get('/admin', function () {
+    return 'Todo :  Make the admin pages!';
 });
+
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
+
 
 /*
 |--------------------------------------------------------------------------

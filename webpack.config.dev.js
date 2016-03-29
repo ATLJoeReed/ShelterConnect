@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   devtool: 'cheap-eval-source-map',
   entry: [
-    './resources/assets/js/main',
+    './resources/assets/js/main'
   ],
   output: {
     path: path.join(__dirname, 'public/assets/js/'),
