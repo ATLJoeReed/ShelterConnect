@@ -27,4 +27,5 @@
 @section('footer')
 
  This is the footer
-@endsection
+@
+

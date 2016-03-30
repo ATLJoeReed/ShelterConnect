@@ -18,19 +18,23 @@ class CreateShelterTable extends Migration
             $table->increments('id');
             $table->string('name',100)->unique();
 
-            //location info
-            $table->string('address1', 100);
-            $table->string('address2', 100)->nullable();
+            //location - street
+            $table->string('address_1', 100);
+            $table->string('address_2', 100)->nullable();
             $table->string('city', 50);
             $table->string('state', 50);
             $table->string('zip_code',10);
 
-            //contact info
-            $table->string('phone1', 20);
-            $table->string('phone2', 20);
+            //location - gps
+            $table->decimal('latitude', 9,6);
+            $table->decimal('longitude', 9,6);
+
+            //contact
+            $table->string('phone_1', 20);
+            $table->string('phone_2', 20);
 
 
-            //bed info
+            //beds info
             $table->integer('beds_total');
             $table->integer('beds_available');
             $table->integer('beds_taken');
@@ -50,6 +54,6 @@ class CreateShelterTable extends Migration
      */
     public function down()
     {
-        Schema::drop('Shelter');
+        Schema::drop('shelter');
     }
 }

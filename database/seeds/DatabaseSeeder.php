@@ -10,7 +10,12 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
+	{
+		$this->call('ShelterTableSeeder');
+		
+        $this->call('UsersTableSeeder');
+		
+        $this->call('ReservationTableSeeder');
         // $this->call(UserTableSeeder::class);
     }
 }
