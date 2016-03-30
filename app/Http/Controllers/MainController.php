@@ -11,11 +11,10 @@ class MainController extends Controller{
 
 		//todo, get the locations from postgres
 		
-		$shelters =  [];
-
+		
 
 		//if type of user is admin, go to index
-		return view('shelter.index');
+		return view('main.app');
 
 		// if type of user is shelter employee redirect to shetler
 	
