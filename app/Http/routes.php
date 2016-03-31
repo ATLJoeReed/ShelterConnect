@@ -19,7 +19,6 @@ Route::get('/shelters', 'MainController@shelters');
 
 
 Route::group(['prefix' => 'admin'], function () {
-	// Controllers Within The "App\Http\Controllers\Admin" Namespace
     // route /admin
 
 	Route::group(['prefix' => 'shelters' ], function () {
