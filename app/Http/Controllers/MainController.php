@@ -2,6 +2,11 @@
 
 
 namespace App\Http\Controllers;
+use App\User;
+use DB;
+
+//depenency inject request
+use Illuminate\Http\Request;
 
 // This class provides any json data needed by the main application
 class MainController extends Controller{
@@ -24,12 +29,21 @@ class MainController extends Controller{
 	}
 
 
-	//returns list of shelters 
-	public function shelters(){ 	//todo: params lat, long
+	//returns list of shelters
+	public function shelters(Request $request){
 
-		return response()-> json(['shelters' => '']);
 
+		$latitude  =  $request->input('lat', 33.7408); 
+		$longitude  = $request->input('long', -84.395);
+		$limit = 15; // # of nearby results
+
+
+		$shelters = DB::select( 
+			"select * from sc_return_closest_shelters( {$latitude}, {$longitude}, {$limit} )");
+
+		return $shelters;
 	}
+
 
 }
 

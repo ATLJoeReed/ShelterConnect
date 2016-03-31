@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/shelters', 'MainController@shelters');
+
 Route::get('/', 'MainController@index');
 
 Route::get('/shelter', 'ShelterController@index');

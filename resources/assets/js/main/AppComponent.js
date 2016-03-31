@@ -17,6 +17,7 @@ class App extends React.Component {
 
       let data;
       $.ajax({
+        //url: `http://localhost:8000/shelters?lat=${loc.lat}&long=${loc.lng}`,
         url: `https://infinite-brook-58503.herokuapp.com/api/shelters.php?lat=${loc.lat}&long=${loc.lng}`,
         crossDomain: true,
         dataType: 'json',
