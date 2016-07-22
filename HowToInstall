@@ -1,0 +1,15 @@
+1.  Install Laravel with Homestead.
+	a.  Follow instructions: https://laravel.com/docs/5.2/homestead
+2.  Set up Laravel directory locations.
+    a.  You need to point to the correct directory and set up /etc/hosts to have homestead.app go to the laravel ip
+3.  Database setup.
+    a.  login to the vagrant box (vagrant ssh from homestead
+    b.  Create a admin user shelterconnect with password findm3ab3d
+    c.  Run the migrations "php artisan migrate" from the vagrant box in the Code directory
+    d.  Run the seeds "php artisan db:seed" from the vagrant box in the code directory
+WOO HOO.  Your environment should be set up.
+4.  Front End:
+    a.  Install webpack and then run it from the vagrant Code directory.
+	b.  Modify the Javascript files at the locations set for the webpack
+5.  Back End:
+	a.  Learn laravel routes.  Use the routes to point to the correct urls/files and deliver appropriate displays.

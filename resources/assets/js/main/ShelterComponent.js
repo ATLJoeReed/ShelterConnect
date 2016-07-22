@@ -38,10 +38,11 @@ class Shelter extends React.Component {
         </div>
         <div className="bedInfo">
           <h2>{this.props.data.name}</h2>
-          <p>{`${Number(this.props.data.dist).toFixed(2)} miles away`}</p>
-          <p><a href={`tel:${this.props.data.phone_number_1}`}>{this.props.data.phone_number_1}</a></p>          <p>{this.props.data.address1}</p>
-          <button className="reserve">Reserve</button>
-          <button>Directions</button>
+          <p>{`${Number(this.props.data.distance).toFixed(2)} miles away`}</p>
+          <p><a href={`tel:${this.props.data.phone_1}`}>{this.props.data.phone_1}</a></p>          <p>{this.props.data.address_1}</p>
+		  <form action={'https://www.google.com/maps/dir/'+this.props.data.name+'/@' + this.props.data.latitude + ','+this.props.data.longitude + ',8z'}>
+	        <button type="submit" value="Directions">Directions</button>
+		  </form>
         </div>
     </div>
     );

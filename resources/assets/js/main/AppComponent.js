@@ -17,8 +17,7 @@ class App extends React.Component {
 
       let data;
       $.ajax({
-        //url: `http://localhost:8000/shelters?lat=${loc.lat}&long=${loc.lng}`,
-        url: `https://infinite-brook-58503.herokuapp.com/api/shelters.php?lat=${loc.lat}&long=${loc.lng}`,
+        url: `http://homestead.app/shelters?lat=${loc.lat}&long=${loc.lng}`,
         crossDomain: true,
         dataType: 'json',
         xhrFields: {
@@ -36,12 +35,12 @@ class App extends React.Component {
             position: loc,
             map,
             title: 'Your Location',
-            icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            icon: 'assets/images/man.svg'
           });
 
           this.state.data.forEach(shelter => {
             const mark = new google.maps.Marker({
-              position: { lat: Number(shelter.lat), lng: Number(shelter.long) },
+              position: { lat: Number(shelter.latitude), lng: Number(shelter.longitude) },
               map,
               title: shelter.name,
             });

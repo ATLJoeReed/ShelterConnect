@@ -35,7 +35,7 @@ class MainController extends Controller{
 
 		$latitude  =  $request->input('lat', 33.7408); 
 		$longitude  = $request->input('long', -84.395);
-		$limit = 15; // # of nearby results
+		$limit = 5; // # of nearby results
 
 
 		$shelters = DB::select( 

@@ -13,7 +13,7 @@
 
 	<form>
 		
-		Searh for shelters 
+		Search for shelters 
 		<input type="search" placeholder="" />
 		<input type ="submit" value="Search"/>
 
